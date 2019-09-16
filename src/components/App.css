@@ -1,0 +1,48 @@
+/*#032e35*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 6%;
+  animation: App-logo-spin infinite 1s linear;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.float-left {
+  float: left;
+}
+
+.fix-card {
+  width: 70%;
+  float: left;
+  text-align: 'left';
+  margin: 0 auto;
+  margin-left: 14%;
+}
+
+.MuiPaper-root-32.MuiPaper-elevation1-35.MuiPaper-rounded-33 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.MuiTypography-root-63 {
+  float: left;
+}
+
+.MuiTypography-root-63.MuiTypography-body2-71.MuiCardHeader-title-167 {
+  font-weight: bold;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
