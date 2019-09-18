@@ -4,8 +4,8 @@
 }
 
 .App-logo {
-  width: 6%;
-  animation: App-logo-spin infinite 1s linear;
+  width: 3%;
+  animation: App-logo-spin 1s linear;
   pointer-events: none;
 }
 
@@ -36,6 +36,11 @@
 
 .MuiTypography-root-63.MuiTypography-body2-71.MuiCardHeader-title-167 {
   font-weight: bold;
+}
+
+.chips {
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
 @keyframes App-logo-spin {

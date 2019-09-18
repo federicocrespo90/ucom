@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import logo from '../../logo.svg';
+import logo from '../../assets/aerolab-logo.svg';
 import './navbar.component.css';
 
 // const useStyles = {
@@ -42,7 +42,6 @@ export default function MenuAppBar() {
             <Toolbar>
                 <img src={logo} className="App-logo" alt="logo" />
                 <Typography variant="h6" color="inherit" noWrap>
-                    Ucom
                 </Typography>
                 {auth && (
                     <div>
@@ -50,7 +49,6 @@ export default function MenuAppBar() {
                             aria-label="account of current user"
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
-                            horizontal='right'
                             onClick={handleMenu}
                             color="inherit"
                         >

@@ -17,6 +17,10 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Collapse from '@material-ui/core/Collapse';
 import InfoIcon from '@material-ui/icons/Info';
 import MenuAppBar from './navbar/navbar.component';
+import Grid from '@material-ui/core/Grid';
+import Cover from '../assets/header-x1.png';
+import Chip from '@material-ui/core/Chip'; //onDelete
+import Divider from '@material-ui/core/Divider';
 
 /**
  * App is an abstract base class. It is defined simply
@@ -96,6 +100,33 @@ class App extends React.Component {
         <header className="App-header">
           <MenuAppBar />
         </header>
+        <Grid container>
+          <Grid item xs={12}>
+            <img src={Cover} width="100%" />
+          </Grid>
+          <Divider variant="middle" />
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="left"
+          >
+            <Typography className="chips">
+              16/32 products | Sort by:
+            </Typography>
+            <Chip
+              className="chips"
+              label="Deletable Primary Chip"
+              color="primary"
+            />
+            <Chip
+              label="Clickable Link Chip"
+              className="chips"
+              href="#chip"
+              clickable
+            />
+          </Grid>
+        </Grid>
         <form noValidate autoComplete="off">
           <TextField
             className="searcher"
